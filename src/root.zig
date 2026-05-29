@@ -27,6 +27,11 @@ pub const findDuplicates = dedup.findDuplicates;
 pub const freeDuplicates = dedup.freeDuplicates;
 pub const DuplicateGroup = dedup.DuplicateGroup;
 
+pub const gc = @import("gc.zig");
+pub const markReachable = gc.markReachable;
+pub const sweepUnreachable = gc.sweepUnreachable;
+pub const collectUnreachable = gc.collectUnreachable;
+
 test {
     @import("std").testing.refAllDecls(@This());
 }
