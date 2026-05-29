@@ -21,6 +21,12 @@ pub const restoreIncrementalInto = incremental.restoreIncrementalInto;
 pub const IncrementalResult = incremental.IncrementalResult;
 pub const IncrementalError = incremental.Error;
 
+pub const dedup = @import("dedup.zig");
+pub const branchStateHash = dedup.branchStateHash;
+pub const findDuplicates = dedup.findDuplicates;
+pub const freeDuplicates = dedup.freeDuplicates;
+pub const DuplicateGroup = dedup.DuplicateGroup;
+
 test {
     @import("std").testing.refAllDecls(@This());
 }
