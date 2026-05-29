@@ -32,6 +32,10 @@ pub const markReachable = gc.markReachable;
 pub const sweepUnreachable = gc.sweepUnreachable;
 pub const collectUnreachable = gc.collectUnreachable;
 
+pub const mvcc = @import("mvcc.zig");
+pub const MvccStore = mvcc.MvccStore;
+pub const MvccItemId = mvcc.ItemId;
+
 test {
     @import("std").testing.refAllDecls(@This());
 }
