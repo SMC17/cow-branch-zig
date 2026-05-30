@@ -49,6 +49,10 @@ pub const branch_label = @import("branch_label.zig");
 pub const BranchLabelRegistry = branch_label.BranchLabelRegistry;
 pub const BranchLabelError = branch_label.Error;
 
+pub const branch_meta = @import("branch_meta.zig");
+pub const BranchMeta = branch_meta.BranchMeta;
+pub const BranchMetaView = branch_meta.BranchMetaView;
+
 test {
     @import("std").testing.refAllDecls(@This());
 }
