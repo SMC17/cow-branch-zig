@@ -45,6 +45,10 @@ pub const branch_age = @import("branch_age.zig");
 pub const BranchAgeRegistry = branch_age.BranchAgeRegistry;
 pub const BranchAgeError = branch_age.Error;
 
+pub const branch_label = @import("branch_label.zig");
+pub const BranchLabelRegistry = branch_label.BranchLabelRegistry;
+pub const BranchLabelError = branch_label.Error;
+
 test {
     @import("std").testing.refAllDecls(@This());
 }
