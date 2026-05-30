@@ -1,6 +1,6 @@
 .{
     .name = .cow_branch,
-    .version = "0.0.7",
+    .version = "0.0.8",
     .fingerprint = 0x23cc221b4df4ecfe,
     .minimum_zig_version = "0.16.0",
     .paths = .{
