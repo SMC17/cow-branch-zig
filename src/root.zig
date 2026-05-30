@@ -36,6 +36,11 @@ pub const mvcc = @import("mvcc.zig");
 pub const MvccStore = mvcc.MvccStore;
 pub const MvccItemId = mvcc.ItemId;
 
+pub const ownership_marker = @import("ownership_marker.zig");
+pub const Ownership = ownership_marker.Ownership;
+pub const Tagged = ownership_marker.Tagged;
+pub const OwnershipError = ownership_marker.Error;
+
 test {
     @import("std").testing.refAllDecls(@This());
 }
