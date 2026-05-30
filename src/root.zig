@@ -41,6 +41,10 @@ pub const Ownership = ownership_marker.Ownership;
 pub const Tagged = ownership_marker.Tagged;
 pub const OwnershipError = ownership_marker.Error;
 
+pub const branch_age = @import("branch_age.zig");
+pub const BranchAgeRegistry = branch_age.BranchAgeRegistry;
+pub const BranchAgeError = branch_age.Error;
+
 test {
     @import("std").testing.refAllDecls(@This());
 }
