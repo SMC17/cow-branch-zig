@@ -53,6 +53,12 @@ pub const branch_meta = @import("branch_meta.zig");
 pub const BranchMeta = branch_meta.BranchMeta;
 pub const BranchMetaView = branch_meta.BranchMetaView;
 
+pub const branch_audit_log = @import("branch_audit_log.zig");
+pub const BranchEventKind = branch_audit_log.BranchEventKind;
+pub const BranchEvent = branch_audit_log.BranchEvent;
+pub const BranchAuditLog = branch_audit_log.BranchAuditLog;
+pub const BranchAuditError = branch_audit_log.Error;
+
 test {
     @import("std").testing.refAllDecls(@This());
 }
